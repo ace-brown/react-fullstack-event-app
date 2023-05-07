@@ -24,38 +24,9 @@ function MainNavigation() {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
+              end
             >
               Evnets
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to={"/events/:id"}
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
-            >
-              Evnets detail
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to={"/events/new"}
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
-            >
-              New evnets
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to={"/events/:id/edit"}
-              className={({ isActive }) =>
-                isActive ? classes.active : undefined
-              }
-            >
-              Edit evnets
             </NavLink>
           </li>
         </ul>

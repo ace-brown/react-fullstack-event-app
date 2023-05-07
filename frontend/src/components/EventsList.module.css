@@ -1,6 +1,10 @@
 .events {
   margin: 2rem auto;
-  max-width: 60%;
+  max-width: 55%;
+}
+
+.heading {
+  margin: 5rem 0 3rem 0;
 }
 
 .list {
@@ -26,6 +30,7 @@
 .item img {
   width: 60%;
   object-fit: cover;
+  aspect-ratio: 1.1;
 }
 
 .content {

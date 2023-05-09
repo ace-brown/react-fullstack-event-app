@@ -16,9 +16,12 @@ const EventsPage = () => {
 export default EventsPage;
 
 export const loader = async () => {
-  const response = await fetch("http://localhost:8080/events");
+  const response = await fetch("http://localhost:8080/eventsf");
   if (!response.ok) {
-    throw { message: "Data fetching was not successful!" };
+    throw new Response(
+      JSON.stringify({ message: "Data fetching was not successful!" }),
+      { status: 500 }
+    );
   } else {
     const respData = await response.json();
     return respData;

@@ -12,6 +12,8 @@ import RootLayout from "./pages/Root";
 import EventsRoot from "./pages/EventsRoot";
 import ErrorPage from "./pages/ErrorPage";
 
+import Counter from "./components/Test";
+
 const router = createBrowserRouter([
   {
     path: "/",
